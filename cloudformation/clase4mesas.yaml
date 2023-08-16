@@ -1,0 +1,8 @@
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    BucketName: clase4grupo1
+    VersioningConfiguration:
+        Status: Enabled    
+    Properties:
+      AccessControl: Private

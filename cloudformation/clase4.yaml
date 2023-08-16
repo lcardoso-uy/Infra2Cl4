@@ -1,0 +1,22 @@
+Resources:
+  instanciaProduccion:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: us-east-la
+      ImageId: ami-053b0d53c279acc90
+      InstanceType: t2.micro
+      KeyName: dh2023comision12
+      Tags:
+        - Key: KeyName
+          Value: instancia_produccion
+
+  instanciaDesarrollo:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: us-east-lb
+      ImageId: ami-0fc682b2a42e57ca2
+      InstanceType: t1.micro
+      KeyName: dh2023comision12
+      Tags:
+        - Key: KeyName
+          Value: instancia_desarrollo
